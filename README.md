@@ -2,7 +2,7 @@
 R demos for categorical data visualisation and 3D bathtub 
 
 The two folders correspond to two demos that were shown in my 12. March 2015 Data Visualisation talk organised by the Oxford Academic IT Research Support Team. 
-<a> http://blogs.it.ox.ac.uk/acit-rs-team/2014/12/17/data-visualisation-talks/ <\a>
+http://blogs.it.ox.ac.uk/acit-rs-team/2014/12/17/data-visualisation-talks/
 
 ### vcd - Visualising Categorical Data - in 3D using rgl
 Run robinson3d.R. Should install and load required packages, data and plot data cube. Not comprehensively tested. 
