@@ -1,7 +1,13 @@
 # Must be executed BEFORE rgl is loaded on headless devices.
 options(rgl.useNULL=TRUE)
-library(shiny)
-library(shinyRGL)
+if(!require("shiny")){install.packages("shiny")
+                    if (require("shiny")){"shiny installed correctly"} 
+                    else {print("could not install shiny")}}
+
+if(!require("shinyRGL")){install.packages("shinyRGL")
+                      if (require("shinyRGL")){"shinyRGL installed correctly"} 
+                      else {print("could not install shinyRGL")}}
+
 rates_14_all <- read.csv("data/rates_14_all.csv")
 
 shinyUI(fluidPage(theme = "bootstrap.css",                  

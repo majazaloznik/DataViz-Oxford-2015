@@ -1,10 +1,22 @@
 # Must be executed BEFORE rgl is loaded on headless devices.
 options(rgl.useNULL=TRUE)
+if(!require("shiny")){install.packages("shiny")
+                      if (require("shiny")){"shiny installed correctly"} 
+                      else {print("could not install shiny")}}
 
-library(shiny)
-library(rgl)
-library(reshape2)
-library(shinyRGL)
+if(!require("rgl")){install.packages("rgl")
+                    if (require("rgl")){"rgl installed correctly"} 
+                    else {print("could not install rgl")}}
+
+if(!require("shinyRGL")){install.packages("shinyRGL")
+                         if (require("shinyRGL")){"shinyRGL installed correctly"} 
+                         else {print("could not install shinyRGL")}}
+
+if(!require("reshape2")){install.packages("reshape2")
+                         if (require("reshape2")){"reshape2 installed correctly"} 
+                         else {print("could not install reshape2")}}
+
+
 rates_14_all <- read.csv("data/rates_14_all.csv")
 
 
